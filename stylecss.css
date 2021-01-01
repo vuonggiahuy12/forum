@@ -1,0 +1,235 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color:green;
+}
+.list-product-title{width: 100%;
+margin: 0px 0px;
+position: relative;}
+.list-product-subtitle{width: 100%;
+    margin: 0px 5px;}
+    .card-product{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:70%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+      }
+      
+      .card:hover .overlay {
+        opacity: 1;
+      }
+    
+      .text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  video {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  .container11 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .controls-top{
+      position: relative;
+  }
+  .col-md-3{
+    display: inline-block;
+    margin-left: -5px;
+  }
+  .col-md-3 img{
+    width:100%;
+   margin-top: 5px;
+  }
+  .left{float: left;
+    width: 45%;
+  margin-right: 5px;}
+  .right{float: right;
+    width:45%;
+  margin-left: 5px;}
+  .trai1{
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+  }
+  .canvas1 {
+    color: #00dc64;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #00dc64;
+}
+.phai1{
+  width: 50%;
+  float: right;
+}
+body, html {
+  /*take up all available height*/
+  height: 100%
+}
+body {
+  font: 100% 'Oswald', sans-serif;
+}
+/*This is to target IE11 only.  IE does not play nice with min-heights and column nowrap. More modifications will probably be needed, as it is a little buggy in IE11.  The new Edge browser is supposed to fix this flex bug and others.*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .wrapper {
+    height: 100%;
+    
+  }
+  main {
+    min-height: 200px
+  }
+}
+.wrapper {
+  /*Fill all possible height with the wrapper. I believe height: 100% will also work just as well.*/
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  /*this is the key to keeping elements such as the nav at the top and the footer at the bottom.  This might not always be needed.*/
+  justify-content: space-between;
+}
+header {
+  text-align: center;
+  background: rgb(55,55,55);
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+}
+/*I was lazy and I didn't create an image for the logo*/
+h1 { 
+  padding: 10px;
+  font-size: 2.7em;
+  color: rgb(245,235,245);
+  text-align: center;
+}
+/*You could also wrap this in a nav for extra semantic goodness*/
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  list-style: none;
+  padding-right: 10px;
+  /*this will push our nav all the way to the right.  Then we don't have to worry about the width*/
+  margin-left:10px ;
+}
+.nav > li {
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff
+}
+.nav > li:first-child {
+  border-left: 1px solid #fff
+}
+
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  /*this will fill up the remaining space for our content*/
+  flex: 1 1 auto;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  width: 100%;
+  background: rgb(75,75,75);
+  color: rgb(205,205,205);
+  font-weight: 100;
+  padding: 10px 0;
+  text-align: center
+}
+main > section {
+  /*this will essentially make it a 3 column layout.  Change it to whatever is needed.  Width and percentages work just as well.*/
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px
+}
+main > section > p {
+  padding-bottom: px
+}
+footer {
+  background: lightblue;
+  text-align: center;
+  padding: 10px;
+  /*you could also get rid of the .wrapper justify-content and use margin-top: auto*/
+}
+/*Change these generic media queries to suit your needs, especially with retina displays*/
+@media screen and (max-width: 568px) {
+  h1 {
+    width: 100%;
+    font-size: 2.0em
+  }
+  .nav {
+    min-width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .nav > li {
+    flex: 1
+  }
+  .nav > li > a {
+    font-size: 1.0em
+  }
+  h2 {
+    font-size: 1.2em
+  }
+  main {
+    /*go to a more vertical layout*/
+    flex-flow: column nowrap;
+  }
+  main > section {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+  }
+  main > section > p {
+    width: 100%
+  }
+}
+.nho{width: 100%;}
+
+.navbar-nav{
+  background-color: #00dc64;
+}
+.navbar-nav{
+  background-color: #00dc64;
+}
+.hinhanh{
+  width: 100%;
+  height: 400px;
+  background-image: url(./hinhanhweb/discover_bg.jpg);}
