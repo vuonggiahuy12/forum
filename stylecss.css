@@ -232,3 +232,7 @@ footer {
 .hinhanh{
   width: 100%;
   background-image: url(./hinhanhweb/discover_bg.jpg);}
+  .nav-tabs .nav-link{
+    background: rgb(75,75,75);
+    color: white;
+  }
