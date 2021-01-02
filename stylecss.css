@@ -112,6 +112,7 @@ body {
   }
   main {
     min-height: 200px
+    
   }
 }
 .wrapper {
@@ -163,6 +164,7 @@ main {
   flex: 1 1 auto;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  background-color: white;
 }
 h2 {
   width: 100%;
