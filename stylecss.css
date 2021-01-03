@@ -256,3 +256,8 @@ footer {
 .card-text{
   color: aquamarine;
 }
+.nav-tabs .nav-item {
+
+  width: 12%;
+  margin-left: 25px;
+}
